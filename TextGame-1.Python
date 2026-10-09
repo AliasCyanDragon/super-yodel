@@ -1,0 +1,29 @@
+import time
+
+lifes = 3
+Hunger = 0
+Health = 100
+
+name = input("Enter Username: ")
+while name == "":
+    time.sleep(2)
+    print("Invalid")
+    name = input("UserName:")
+    time.sleep(2)
+print(f'Hello {name} Welcome to Apocy!')
+time.sleep(1.5)
+print("Please select your Starting location: ")
+time.sleep(1)
+Location = input("City(C), Forest(F), Ocean(O), Desert(D), Jungle(O)").upper()
+
+if Location == "C":
+    print("HUH, did I fall asleep")
+    time.sleep(1.2)
+    print("Why is it so noisy, Aghhh")
+    time.sleep(1.2)
+    WakeUp = input("Pick up phone or Get up and see window")
+
+print(f'Lifes: {lifes}')
+print(f'Hunger is at:{Hunger}')
+print(f'Health: {Health}')
+
